@@ -157,7 +157,7 @@ void init_statetable(void){
 	a(s_entity,NULL,		0,255,			c_eat+c_store,	s_entity);
 	r(s_entitydone,	t_entity,								s_start);
 
-	a(s_word,		c_ws,	0,0,			c_nil,			s_worddone);
+	a(s_word,		c_ws,	0,0,			c_eat+c_store,			s_word);
 	a(s_word,		"<&",	0,0,			c_nil,			s_worddone);
 	a(s_word,		NULL,	0,255,			c_eat+c_store,	s_word);
 	r(s_worddone,	t_word,									s_start);
